@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Fundo branco para o conteúdo */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-top-left-radius: 10px; /* Cantos arredondados */
+    border-top-right-radius: 10px; /* Cantos arredondados */
+}
+
+h1 {
+    margin: 0;
+}
+
+#calendar {
+    margin-bottom: 20px;
+}
+
+#event-form {
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Cor do texto */
+}
+
+input[type="date"],
+input[type="time"],
+input[type="text"],
+button {
+    margin-bottom: 10px;
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    padding: 10px;
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+button {
+    background-color: #ff69b4; /* Rosa */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d44a8f; /* Rosa mais escuro */
+}
+
+.event {
+    background-color: #f9f9f9; /* Fundo cinza claro para os eventos */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+.event.completed {
+    background-color: #eee; /* Fundo cinza claro para eventos concluídos */
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        border-radius: 0; /* Remover bordas arredondadas */
+        box-shadow: none; /* Remover sombra */
+    }
+
+    #event-form input[type="date"],
+    #event-form input[type="time"],
+    #event-form input[type="text"],
+    #event-form button {
+        width: calc(100% - 22px); /* Acomodar a largura da borda */
+    }
+}

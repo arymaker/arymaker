@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Decorliria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Agenda Decorliria</h1>
+    </header>
+    <div class="container">
+        <div id="calendar"></div>
+        <div id="event-form">
+            <h2>Adicionar Evento</h2>
+            <label for="event-date">Data:</label>
+            <input type="date" id="event-date">
+            <label for="event-time">Horário:</label>
+            <input type="time" id="event-time">
+            <label for="event-name">Evento:</label>
+            <input type="text" id="event-name">
+            <button onclick="addEvent()">Adicionar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
